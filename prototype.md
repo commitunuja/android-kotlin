@@ -1,3 +1,1 @@
-# Pengertian Prototipe
-
-Prototype adalah model pertama dari produk yang digunakan untuk men-testing konsep atau gambaran dari ide kita. Prototyping telah digunakan oleh banyak pemogramin. Sebelum memulai membuat sebuah aplikasi, harus menggambarkan dari rancangan dan membuat model dari aplikasi. Perusahaan yang bergerak di bidang software, juga membuat prototype software untuk mengexplore ide sebelum memulai pengembangan aplikasi. Dalam kontek pengembangan aplikasi, sebuah prototype bisa menjadi contoh awal dari aplikasi dan hal ini menentukan mana fitur yang tidak akan digunakan sehingga muncul gambaran dasar dari tampilan aplikasi.
+# starter
