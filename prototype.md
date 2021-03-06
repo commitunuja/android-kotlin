@@ -29,5 +29,5 @@ Kenapa investor memerlukan prototipe? dan apa saja manfaatnya? Ada beberapa manf
 ### Contoh Prototipe
 
 Contoh sederhananya begini, seorang pengusaha ingin mengembangkan aplikasi penjualan. Kemudian, ia melakukan analisa kebutuhan konsumen, produk penjualan seperti apa yang diinginkan konsumen. Ternyata, mayoritas konsumen menginginkan aplikasi penjualan yang mempermudah transaksi pembelian yaitu :
-![Foto](file:///C:/Users/Sidopekso/Documents/GitHub/android-kotlin/foto/Gambar%201.PNG)
+![Foto](https://drive.google.com/drive/u/0/folders/1mFuQqj7Da_cyRs4837SVuyIBVFgNKE3b)
 ![Foto](file:///C:/Users/Sidopekso/Documents/GitHub/android-kotlin/foto/Gambar%202.png)
