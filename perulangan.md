@@ -52,7 +52,7 @@ Perbedaannya, pernyataan pada pernyataan **_do_** akan dieksekusi terlebih dahul
 
 <p>Contoh Program sederhana dengan menggunakan do-while, seperti berikut ini : </p>
 
-Menggunakan **[While](https://while.org)**.
+Menggunakan **While**.
 
 ```json
 var angka = 0
@@ -65,7 +65,7 @@ var angka = 0
 
 ![Foto](https://4.bp.blogspot.com/-LLnVnyvq3Z4/WUUqINF8aeI/AAAAAAAAB4k/RFHvvZgxzEEK-9O_0sUUvTW_Mqym4LYtACLcBGAs/s1600/Kotlin-Looping-Example3-min.jpg)
 
-Menggunakan **[Do-While](https://do-while.org)**.
+Menggunakan **Do-While**.
 
 ```json
 var angka = 0
