@@ -139,4 +139,4 @@ fun main(args: Array<String>){
 
 Coba perhatikan, Program akan melooping sesuai jumlah item pada list yang terdapat pada variable teman, dikarenakan pada list tersebut berjumlah 4 item yaitu **"WIldan", "Azis", "Alvians", "Ferdi"**. Jadi program akan melooping sebanyak 4 kali.
 
-Fungsi **[let](https://let.org)** yaitu untuk Memanggil blok fungsi yang ditentukan dengan nilai **[this](https://this.org)** sebagai argumennya dan mengembalikan hasilnya, lalu kita akan mencetak semua item pada list tersebut melalui variable data, dengan menggunakan fungsi **[it](https://it.org)**.
+Fungsi **let** yaitu untuk Memanggil blok fungsi yang ditentukan dengan nilai **this** sebagai argumennya dan mengembalikan hasilnya, lalu kita akan mencetak semua item pada list tersebut melalui variable data, dengan menggunakan fungsi **it**.
