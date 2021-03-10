@@ -10,3 +10,14 @@ Kelas kontrak adalah penampung untuk konstanta yang menentukan nama URI, tabel, 
 Cara yang tepat untuk mengatur kelas kontrak adalah dengan memberikan definisi yang bersifat global pada seluruh database Anda di tingkat root kelas tersebut. Kemudian, buat kelas dalam untuk setiap tabel. Setiap kelas dalam akan menghitung kolom tabel yang terkait.
 
 Contohnya, kontrak berikut menentukan nama tabel dan nama kolom untuk satu tabel yang merepresentasikan feed RSS:
+
+```kotlin
+object FeedReaderContract {
+    // Table contents are grouped together in an anonymous object.
+    object FeedEntry : BaseColumns {
+        const val TABLE_NAME = "entry"
+        const val COLUMN_NAME_TITLE = "title"
+        const val COLUMN_NAME_SUBTITLE = "subtitle"
+    }
+}
+```
