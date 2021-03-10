@@ -1,4 +1,4 @@
-### Event 
+## Event 
 
 Di Android, ada berbagai cara untuk mencegat peristiwa dari interaksi pengguna dengan aplikasi. Saat mempertimbangkan peristiwa dalam antarmuka pengguna, pendekatannya adalah menangkap peristiwa dari objek View tertentu yang digunakan pengguna untuk berinteraksi. Class View menyediakan sarana untuk melakukannya.
 
