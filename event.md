@@ -131,4 +131,4 @@ Jika Anda ingin mendeklarasikan View sebagai elemen yang dapat difokuskan dalam 
 
 Untuk meminta View tertentu mengambil fokus, panggil `requestFocus()`.
 
-Untuk memproses peristiwa fokus (diberi tahu bila View menerima atau kehilangan fokus), gunakan `onFocusChange()`, sebagaimana dibahas di bagian Pemroses peristiwa.
+Untuk memproses peristiwa fokus (diberi tahu bila View menerima atau kehilangan fokus), gunakan `onFocusChange()`.
