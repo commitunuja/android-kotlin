@@ -17,17 +17,17 @@ Focusing on :
 
 - [Instalasi Android & Debug](instalasi-android-dan-debug.md)
 - [Pengenalan Lingkungan Android](Pengenalan_Lingkungan_Android.md)
-- Layout Dengan Design
+- [Layout Dengan Design](layout_dengan_design.md)
 - Layout Dengan XML
 - Activity
-- Event
+- [Event](event.md)
 - [Perulangan](perulangan.md)
 
 ### 2. Project Kotlin Android
 
-- Library design
+- [Library design](library_design.md)
 - [Prototipe](prototype.md)
-- SQLite
+- [SQLite](sqlite.md)
 - Tugas Besar
 - FINAL-PROJECT
 
