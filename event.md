@@ -1,6 +1,7 @@
 ## Event 
 
-Di Android, ada berbagai cara untuk mencegat peristiwa dari interaksi pengguna dengan aplikasi. Saat mempertimbangkan peristiwa dalam antarmuka pengguna, pendekatannya adalah menangkap peristiwa dari objek View tertentu yang digunakan pengguna untuk berinteraksi. Class View menyediakan sarana untuk melakukannya.
+Di Android, ada berbagai cara untuk mencegat peristiwa dari interaksi pengguna dengan aplikasi. Saat mempertimbangkan peristiwa dalam antarmuka pengguna, pendekatannya adalah menangkap peristiwa dari objek View tertentu yang digunakan pengguna untuk berinteraksi.
+Class View menyediakan sarana untuk melakukannya.
 
 Dalam berbagai class View yang akan digunakan untuk menyusun tata letak, Anda mungkin melihat beberapa metode callback publik yang tampak berguna untuk peristiwa UI. Metode ini dipanggil oleh framework Android saat masing-masing tindakan terjadi pada objek tersebut. Misalnya, jika View (seperti Button) disentuh, metode `onTouchEvent()` akan dipanggil pada objek tersebut. Namun, untuk mencegatnya, Anda harus memperluas class dan mengganti metodenya. Akan tetapi, memperluas setiap objek View untuk menangani peristiwa tersebut tidak praktis. Karena itu, class View juga berisi sekumpulan antarmuka bertingkat dengan callback yang jauh lebih mudah ditentukan. Antarmuka ini, yang disebut  pemroses peristiwa, merupakan tiket Anda untuk menangkap interaksi pengguna dengan UI.
 
