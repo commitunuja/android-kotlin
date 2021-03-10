@@ -13,7 +13,7 @@ Jadi, dengan menggunakan RelativeLayout, kita dapat menyusun suatu komponen seca
 
 ![](https://miro.medium.com/max/117/1*4T3J1jr2PvIMYbEW-1Gdpg.png)
 
-#FrameLayout
+# FrameLayout
 
 Layout ini adalah layout yang paling sederhana. Layout ini akan membuat komponen yang ada didalamnya menjadi menumpuk atau saling menutupi satu dengan yang lainnya (layering). Komponen yang paling pertama pada layout ini akan berada dibawah komponen-komponen diatasnya. Pada penggunaan fragment, FrameLayout memiliki kemampuan untuk menjadi container untuk tiap fragment didalam sebuah Activity. Berikut ilustrasi dari penggunaan FrameLayout terhadap child view yang dimiliki didalamnya.
 
