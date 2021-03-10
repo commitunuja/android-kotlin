@@ -6,7 +6,7 @@ Semua anak LinearLayout akan ditumpuk satu sama lain, jadi daftar vertikal hanya
 
 #RelativeLayout
 
-RelativeLayout adalah Layout ini menampilkan komponen dalam posisi relatif. Posisi masing-masing Layout dapat ditentukan sebagai relatif terhadap elemen saudara (seperti di sebelah kiri atau di bawah tampilan lain) atau pada posisi relatif terhadap area RelativeLayout induk (seperti sejajar dengan bagian bawah, kiri atau tengah).
+RelativeLayout adalah Layout ini menampilkan komponen dalam posisi relatif. Posisi masing-masing Layout dapat ditentukan sebagai relatif terhadap elemen saudara (seperti di sebelah kiri atau di bawah tampilan lain) atau pada posisi relatif terhadap area RelativeLayout induk (seperti sejajar dengan bagian bawah, kiri atau tengah)
 Jadi, dengan menggunakan RelativeLayout, kita dapat menyusun suatu komponen secara relatif terhadap komponen lainnya.
 ![](https://miro.medium.com/max/117/1*4T3J1jr2PvIMYbEW-1Gdpg.png)
 
