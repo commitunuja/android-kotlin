@@ -20,7 +20,7 @@ Focusing on :
 - Layout Dengan Design
 - Layout Dengan XML
 - Activity
-- Event
+- [Event](event.md)
 - [Perulangan](perulangan.md)
 
 ### 2. Project Kotlin Android
