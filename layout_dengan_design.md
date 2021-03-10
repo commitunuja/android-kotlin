@@ -21,7 +21,7 @@ Layout ini adalah layout yang paling sederhana. Layout ini akan membuat komponen
 
 # GridLayout
 
-GridLayout ini diperkenalkan pada API level 14 (Android 4.0 / Ice Cream Sandwich), layout ini akan memberikan kemudahan dengan mengakomodir komponen didalamnya ke dalam bentuk Grid (Kolom dan Baris). Dalam sebuah referensi, GridLayout merupakan komponen Layout yang sangat fleksibel dan dapat dimanfaatkan untuk menyederhanakan pembuatan Layout UI yang bersifat kompleks dan bersarang yang terdapat di komponen Layout lainnya.
+<p>GridLayout ini diperkenalkan pada API level 14 (Android 4.0 / Ice Cream Sandwich), layout ini akan memberikan kemudahan dengan mengakomodir komponen didalamnya ke dalam bentuk Grid (Kolom dan Baris). Dalam sebuah referensi, GridLayout merupakan komponen Layout yang sangat fleksibel dan dapat dimanfaatkan untuk menyederhanakan pembuatan Layout UI yang bersifat kompleks dan bersarang yang terdapat di komponen Layout lainnya.</p>
 ![](https://miro.medium.com/max/400/1*DfzmlzH8HBcEDxmEEAdleA.png)
 
 
