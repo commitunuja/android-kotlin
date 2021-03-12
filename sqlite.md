@@ -33,4 +33,8 @@ private const val SQL_CREATE_ENTRIES =
 
 private const val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS ${FeedEntry.TABLE_NAME}"
 ```
+Sama seperti file yang disimpan di penyimpanan internal perangkat, Android menyimpan database Anda dalam folder pribadi aplikasi. Data Anda akan selalu aman karena secara default area ini tidak dapat diakses oleh aplikasi lain atau oleh pengguna.
 
+Kelas `SQLiteOpenHelper` berisi kumpulan API yang berguna untuk mengelola database Anda. Saat kelas ini digunakan untuk memperoleh referensi ke database, sistem hanya akan melakukan operasi pembuatan dan update database, yang mungkin memerlukan banyak waktu, hanya ketika diperlukan; bukan pada saat aplikasi dimulai. Yang perlu Anda lakukan hanyalah memanggil `getWritableDatabase()` atau `getReadableDatabase()`.
+
+Untuk menggunakan `SQLiteOpenHelper`, buat subclass yang mengganti metode callback `onCreate()` dan `onUpgrade()`. Anda mungkin juga perlu menerapkan metode `onDowngrade()` atau `onOpen()`, tetapi keduanya tidak diperlukan.
