@@ -68,3 +68,26 @@ Untuk mengakses database, buat instance subclass `SQLiteOpenHelper` Anda:
 val dbHelper = FeedReaderDbHelper(context)
 ```
 
+#### Memasukkan informasi ke dalam database
+
+Sisipkan data ke dalam database dengan meneruskan objek `ContentValues` ke metode `insert()`:
+
+```kotlin
+// Gets the data repository in write mode
+val db = dbHelper.writableDatabase
+
+// Create a new map of values, where column names are the keys
+val values = ContentValues().apply {
+    put(FeedEntry.COLUMN_NAME_TITLE, title)
+    put(FeedEntry.COLUMN_NAME_SUBTITLE, subtitle)
+}
+
+// Insert the new row, returning the primary key value of the new row
+val newRowId = db?.insert(FeedEntry.TABLE_NAME, null, values)
+```
+
+Argumen pertama untuk `insert()` cukup berisi nama tabel.
+
+Argumen kedua memberi tahu framework tentang apa yang harus dilakukan jika `ContentValues` kosong (yaitu, Anda tidak `put` (memasukkan) nilai apa pun). Jika Anda menetapkan nama sebuah kolom, framework akan menyisipkan baris dan menetapkan nilai kolom tersebut ke null. Jika Anda menetapkan `null`, seperti dalam contoh kode ini, framework tidak akan menyisipkan baris ketika nilai tidak ada.
+
+Metode `insert()` mengembalikan ID untuk baris yang baru dibuat, atau akan menampilkan -1 jika terjadi error saat memasukkan data. Hal ini dapat terjadi jika ada konflik dengan data yang sudah ada dalam database.
