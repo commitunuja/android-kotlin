@@ -4,7 +4,6 @@
 Sebelum praktek alangkah baiknya mengenal terlebih dahulu jenis-jenis layout serta fungsi dan kegunaannya. Sebab layut berfungsi untuk menentukan struktur antarmuka pengguna aplikasi, seperti dalam aktivitas. Semua elemen dalam layout dibuat menggunakan hierarki objek **View** dan **ViewGroub**.
 
 **View** Biasanya menggambarkan sesuatu yang pengguna bisa melihat dan berinteraksi dengannya. Sedangkan **ViewGroup** adalah container tidak terlihat yang menentukan struktur layout untuk **View** dan objek **ViewGroup** lainnya, seperti yang ditampilkan gambar di bawah.
-#
 ![](http://hirupmotekar.com/wp-content/uploads/2017/10/2-8-300x170.png)
 
 #### B. Berikut adalah komponen/jenis-jenis layout
