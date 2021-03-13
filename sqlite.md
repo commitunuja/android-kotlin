@@ -91,3 +91,32 @@ Argumen pertama untuk `insert()` cukup berisi nama tabel.
 Argumen kedua memberi tahu framework tentang apa yang harus dilakukan jika `ContentValues` kosong (yaitu, Anda tidak `put` (memasukkan) nilai apa pun). Jika Anda menetapkan nama sebuah kolom, framework akan menyisipkan baris dan menetapkan nilai kolom tersebut ke null. Jika Anda menetapkan `null`, seperti dalam contoh kode ini, framework tidak akan menyisipkan baris ketika nilai tidak ada.
 
 Metode `insert()` mengembalikan ID untuk baris yang baru dibuat, atau akan menampilkan -1 jika terjadi error saat memasukkan data. Hal ini dapat terjadi jika ada konflik dengan data yang sudah ada dalam database.
+
+#### Membaca informasi dari database
+
+Untuk membaca dari database, gunakan metode `query()`, dengan meneruskan kriteria pemilihan dan kolom yang diinginkan. Metode ini menggabungkan elemen `insert()` dan `update()`, tetapi daftar kolomnya menentukan data yang ingin diambil ("proyeksi"), bukan data yang akan dimasukkan. Hasil kueri ditampilkan kepada Anda dalam objek `Cursor`.
+
+```kotlin
+val db = dbHelper.readableDatabase
+
+// Define a projection that specifies which columns from the database
+// you will actually use after this query.
+val projection = arrayOf(BaseColumns._ID, FeedEntry.COLUMN_NAME_TITLE, FeedEntry.COLUMN_NAME_SUBTITLE)
+
+// Filter results WHERE "title" = 'My Title'
+val selection = "${FeedEntry.COLUMN_NAME_TITLE} = ?"
+val selectionArgs = arrayOf("My Title")
+
+// How you want the results sorted in the resulting Cursor
+val sortOrder = "${FeedEntry.COLUMN_NAME_SUBTITLE} DESC"
+
+val cursor = db.query(
+        FeedEntry.TABLE_NAME,   // The table to query
+        projection,             // The array of columns to return (pass null to get all)
+        selection,              // The columns for the WHERE clause
+        selectionArgs,          // The values for the WHERE clause
+        null,                   // don't group the rows
+        null,                   // don't filter by row groups
+        sortOrder               // The sort order
+)
+```
