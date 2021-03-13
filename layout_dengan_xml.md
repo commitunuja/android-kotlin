@@ -7,8 +7,8 @@ Sebelum praktek alangkah baiknya mengenal terlebih dahulu jenis-jenis layout ser
 ![](http://hirupmotekar.com/wp-content/uploads/2017/10/2-8-300x170.png)
 
 #### B. Berikut adalah komponen/jenis-jenis layout
-1. Linear Layout<p>**Linear Layout** adalah layout yang menyejajarkan semua child view-nya dalam satu arah, secara vertikal atau horizontal. Anda bisa menetapkan arah layout dengan atribut
-![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/linearlayout.png)
+1. Linear Layout<p>**Linear Layout** adalah layout yang menyejajarkan semua child view-nya dalam satu arah, secara vertikal atau horizontal. Anda bisa menetapkan arah layout dengan atribut <p>
+![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/linearlayout.png) <p>
 **contoh :**
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -40,7 +40,7 @@ Sebelum praktek alangkah baiknya mengenal terlebih dahulu jenis-jenis layout ser
 </LinearLayout>
 ```
 Berikut hasilnya : <p>
-![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/sample-linearlayout.png)
+![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/sample-linearlayout.png) <p>
 2. Relative Layout<p>**Relative Layout** adalah layout yang penataan nya ini adalah penataan yang menempatkan widget-widget didalamnya seperti layer, sehingga sebuah widget dapat berada di atas/di bawah widget lainnya atau dengan kata lain Relative merupakan layout yang penataannya lebih bebas (Relative) sehingga bisa di tata di mana saja.
 
 **contoh :**
