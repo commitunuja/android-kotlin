@@ -7,8 +7,7 @@ Sebelum praktek alangkah baiknya mengenal terlebih dahulu jenis-jenis layout ser
 ![](http://hirupmotekar.com/wp-content/uploads/2017/10/2-8-300x170.png)
 
 #### B. Berikut adalah komponen/jenis-jenis layout
-1. Linear Layout
-**Linear Layout** adalah layout yang menyejajarkan semua child view-nya dalam satu arah, secara vertikal atau horizontal. Anda bisa menetapkan arah layout dengan atribut
+1. Linear Layout<p>**Linear Layout** adalah layout yang menyejajarkan semua child view-nya dalam satu arah, secara vertikal atau horizontal. Anda bisa menetapkan arah layout dengan atribut
 ![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/linearlayout.png)
 **contoh :**
 ```xml
@@ -42,8 +41,7 @@ Sebelum praktek alangkah baiknya mengenal terlebih dahulu jenis-jenis layout ser
 ```
 Berikut hasilnya : 
 ![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/sample-linearlayout.png)
-2. Relative Layout
-**Relative Layout** adalah layout yang penataan nya ini adalah penataan yang menempatkan widget-widget didalamnya seperti layer, sehingga sebuah widget dapat berada di atas/di bawah widget lainnya atau dengan kata lain Relative merupakan layout yang penataannya lebih bebas (Relative) sehingga bisa di tata di mana saja.
+2. Relative Layout<p>**Relative Layout** adalah layout yang penataan nya ini adalah penataan yang menempatkan widget-widget didalamnya seperti layer, sehingga sebuah widget dapat berada di atas/di bawah widget lainnya atau dengan kata lain Relative merupakan layout yang penataannya lebih bebas (Relative) sehingga bisa di tata di mana saja.
 
 **contoh :**
 ```xml
@@ -82,8 +80,7 @@ Berikut hasilnya :
 Berikut adalah hasilnya :
 ![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/sample-relativelayout.png)
 
-3. Constrains Layout
-Sebenarnya **Constraint Layout** mirip dengan Relative Layout, karena letak View bergantung pada View lain dalam satu Layout ataupun dengan Parent Layoutnya. Contohnya di Relative Layout kita bisa meletakkan sebuah View di atas, bawah, atau samping View lain. Kita juga dapat mengatur posisinya berdasarkan Parent Layout menggunakan tag seperti centerVertical, alignParentBottom, dll. Akan tetapi, Constraint Layout jauh lebih fleksibel dan lebih mudah digunakan di Layout Editor.
+3. Constrains Layout<p>Sebenarnya **Constraint Layout** mirip dengan Relative Layout, karena letak View bergantung pada View lain dalam satu Layout ataupun dengan Parent Layoutnya. Contohnya di Relative Layout kita bisa meletakkan sebuah View di atas, bawah, atau samping View lain. Kita juga dapat mengatur posisinya berdasarkan Parent Layout menggunakan tag seperti centerVertical, alignParentBottom, dll. Akan tetapi, Constraint Layout jauh lebih fleksibel dan lebih mudah digunakan di Layout Editor.
 
 **Contoh :**
 ```xml
@@ -198,25 +195,25 @@ Sebenarnya **Constraint Layout** mirip dengan Relative Layout, karena letak View
     </android.support.v7.widget.CardView>
 </android.support.constraint.ConstraintLayout>
 ```
-Berikut adalah hasilnya : 
-![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/sample_constraint_layout.png)
+Berikut adalah hasilnya : <p>
+![](https://static.cdn-cdpl.com/source/c7a41e9ac693eba07e1b036591d95601/sample_constraint_layout.png) <p>
 
 #### Mari kita praktek membuat tampilan login yang menarik.
-Membuat Project baru
+Membuat Project baru <p>
 1. Start a new Android Studio project.
 2. File > New > New Project dari menu utama.
 3. Create New Project
 4. Choose your project
-5. Pilih Empety Activity
+5. Pilih Empety Activity <p>
 ![](https://developer.android.com/studio/images/projects/new-project-wizard-choose_2x.png?hl=id)
 6. Setelah memilih, klik Next.
-7. Langkah selanjutnya adalah mengonfigurasi beberapa setelan dan membuat project baru
-![](https://developer.android.com/studio/images/projects/new-project-wizard-configure-2x.png?hl=id)
+7. Langkah selanjutnya adalah mengonfigurasi beberapa setelan dan membuat project baru <p>
+![](https://developer.android.com/studio/images/projects/new-project-wizard-configure-2x.png?hl=id) <p>
 8. Kasih nama projectnya, dan lokasi penyimpanannya. Lalu dibagian Language pilih **Kotlin**, lalu klik > **Finish**
-9. Setelah selesai slesai tampil spt ini
-![Capture](https://user-images.githubusercontent.com/57248614/111025929-fededf80-8419-11eb-91f4-41dc25895be9.PNG)
+9. Setelah selesai slesai tampil spt ini <p>
+![Capture](https://user-images.githubusercontent.com/57248614/111025929-fededf80-8419-11eb-91f4-41dc25895be9.PNG) <p>
 10. Masuk ke **res > Layout > actvity_main.xml**
-11. Lalu masukkan kode berikut di **activity_main.xml**
+11. Lalu masukkan kode berikut di **activity_main.xml** <p>
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
@@ -330,7 +327,7 @@ Membuat Project baru
 
 </LinearLayout>
 ```
-Maka akan seperti berikut tampilannya :
+Maka akan seperti berikut tampilannya : <p>
 ![](https://user-images.githubusercontent.com/57248614/97343813-8b00c800-18ba-11eb-91f1-82667f936d29.PNG)
 
 
