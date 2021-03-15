@@ -2,7 +2,7 @@
 
 Menggunakan database adalah cara yang tepat untuk menyimpan data terstruktur atau data berulang, seperti informasi kontak. Halaman ini berasumsi bahwa Anda sudah familier dengan database SQL secara umum dan akan membantu Anda memulai database SQLite di Android. API yang nanti Anda perlukan untuk menggunakan database di Android tersedia dalam paket android.database.sqlite.
 
-#### Menentukan skema dan kontrak
+### Menentukan skema dan kontrak
 Salah satu prinsip utama database SQL adalah skemanya: deklarasi formal tentang cara database diatur. Skema ini tercermin dalam Pernyataan SQL yang Anda gunakan untuk membuat database. Ada baiknya Anda membuat kelas pendamping yang disebut dengan kelas *kontrak*, yang secara eksplisit menetapkan tata letak skema Anda dalam cara yang sistematis dan terdokumentasi sendiri.
 
 Kelas kontrak adalah penampung untuk konstanta yang menentukan nama URI, tabel, dan kolom. Kelas kontrak memungkinkan Anda menggunakan konstanta yang sama pada semua kelas lain dalam paket yang sama. Hal ini memungkinkan Anda mengubah nama kolom di satu tempat, kemudian mengatur agar perubahan tersebut disebarkan ke seluruh kode.
@@ -21,7 +21,7 @@ object FeedReaderContract {
     }
 }
 ```
-#### Membuat database menggunakan SQL helper
+### Membuat database menggunakan SQL helper
 Setelah menentukan tampilan database, Anda harus menerapkan metode yang akan membuat serta mengelola database dan tabel. Berikut adalah beberapa pernyataan umum untuk membuat dan menghapus tabel :
 
 ```kotlin
@@ -68,7 +68,7 @@ Untuk mengakses database, buat instance subclass `SQLiteOpenHelper` Anda:
 val dbHelper = FeedReaderDbHelper(context)
 ```
 
-#### Memasukkan informasi ke dalam database
+### Memasukkan informasi ke dalam database
 
 Sisipkan data ke dalam database dengan meneruskan objek `ContentValues` ke metode `insert()`:
 
@@ -92,7 +92,7 @@ Argumen kedua memberi tahu framework tentang apa yang harus dilakukan jika `Cont
 
 Metode `insert()` mengembalikan ID untuk baris yang baru dibuat, atau akan menampilkan -1 jika terjadi error saat memasukkan data. Hal ini dapat terjadi jika ada konflik dengan data yang sudah ada dalam database.
 
-#### Membaca informasi dari database
+### Membaca informasi dari database
 
 Untuk membaca dari database, gunakan metode `query()`, dengan meneruskan kriteria pemilihan dan kolom yang diinginkan. Metode ini menggabungkan elemen `insert()` dan `update()`, tetapi daftar kolomnya menentukan data yang ingin diambil ("proyeksi"), bukan data yang akan dimasukkan. Hasil kueri ditampilkan kepada Anda dalam objek `Cursor`.
 
@@ -184,4 +184,3 @@ override fun onDestroy() {
     super.onDestroy()
 }
 ```
-
