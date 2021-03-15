@@ -170,3 +170,18 @@ val count = db.update(
         selection,
         selectionArgs)       
 ```
+
+Nilai hasil dari metode `update()` adalah jumlah baris yang terpengaruh dalam database.
+
+### Mempertahankan koneksi database
+
+Karena `getWritableDatabase()` dan `getReadableDatabase()` sulit dipanggil jika database ditutup, koneksi database harus tetap terbuka selama Anda perlu mengaksesnya. Biasanya, akan lebih optimal untuk menutup database dalam `onDestroy()` Aktivitas pemanggilan.
+
+
+```kotlin
+override fun onDestroy() {
+    dbHelper.close()
+    super.onDestroy()
+}
+```
+
