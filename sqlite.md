@@ -135,7 +135,7 @@ with(cursor) {
 }
 ```
 
-#### Menghapus informasi dari database
+### Menghapus informasi dari database
 
 Untuk menghapus baris dari tabel, Anda harus memberikan kriteria pemilihan yang mengidentifikasi baris ke metode `delete()`. Mekanismenya bekerja dalam cara yang sama seperti argumen pemilihan untuk metode `query()`. Proses ini membagi spesifikasi pemilihan menjadi klausa pemilihan dan argumen pemilihan. Klausa menentukan kolom yang harus dilihat, juga memungkinkan Anda untuk menggabungkan proses pengujian kolom. Argumen adalah nilai yang akan digunakan untuk pengujian, yang terikat dengan klausa tersebut. Karena hasilnya tidak ditangani seperti Pernyataan SQL biasa, penambahan SQL pun tidak akan berpengaruh.
 
@@ -146,4 +146,27 @@ val selection = "${FeedEntry.COLUMN_NAME_TITLE} LIKE ?"
 val selectionArgs = arrayOf("MyTitle")
 // Issue SQL statement.
 val deletedRows = db.delete(FeedEntry.TABLE_NAME, selection, selectionArgs)
+```
+
+### Mengupdate database
+Bila Anda perlu memodifikasi subset nilai database, gunakan metode `update()`.
+Memperbarui tabel akan menggabungkan sintaks `ContentValues` dari `insert()` dengan sintaks `WHERE` dari `delete()`.  
+
+```kotlin
+val db = dbHelper.writableDatabase
+
+// New value for one column
+val title = "MyNewTitle"
+val values = ContentValues().apply {
+    put(FeedEntry.COLUMN_NAME_TITLE, title)
+}
+
+// Which row to update, based on the title
+val selection = "${FeedEntry.COLUMN_NAME_TITLE} LIKE ?"
+val selectionArgs = arrayOf("MyOldTitle")
+val count = db.update(
+        FeedEntry.TABLE_NAME,
+        values,
+        selection,
+        selectionArgs)       
 ```
