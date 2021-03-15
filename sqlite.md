@@ -120,3 +120,7 @@ val cursor = db.query(
         sortOrder               // The sort order
 )
 ```
+
+Argumen ketiga dan keempat (`selection` and `selectionArgs`) digabungkan untuk membuat klausa WHERE. Argumen ini diberikan secara terpisah dari kueri pemilihan sehingga akan dikecualikan sebelum digabungkan. Oleh karena itu, pernyataan pemilihan Anda tidak akan terpengaruh oleh penambahan SQL. Untuk mengetahui detail selengkapnya tentang semua argumen, lihat referensi `query()`.
+
+ntuk melihat baris dalam kursor, gunakan salah satu metode pemindahan `Cursor`, yang harus selalu Anda panggil sebelum mulai membaca nilai. Kursor dimulai pada posisi -1 sehingga memanggil `moveToNext()` akan menempatkan "posisi baca" pada entri pertama dalam hasil dan mengembalikan apakah kursor sudah melewati entri terakhir dalam kumpulan hasil atau belum. Untuk setiap baris, Anda dapat membaca nilai kolom dengan memanggil salah satu metode get `Cursor`, seperti `getString()` atau `getLong()`. Untuk setiap metode get, Anda harus meneruskan posisi indeks kolom yang Anda inginkan, yang bisa Anda dapatkan dengan memanggil `getColumnIndex()` atau `getColumnIndexOrThrow()`. Setelah selesai mengiterasi hasilnya, panggil `close()` pada kursor untuk melepaskan resource-nya. Misalnya, berikut adalah cara mendapatkan semua ID item yang disimpan dalam kursor dan menambahkannya ke daftar :
