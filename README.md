@@ -18,7 +18,7 @@ Focusing on :
 - [Instalasi Android & Debug](instalasi-android-dan-debug.md)
 - [Pengenalan Lingkungan Android](Pengenalan_Lingkungan_Android.md)
 - [Layout Dengan Design](layout_dengan_design.md)
-- Layout Dengan XML
+- [Layout Dengan XML](layout_dengan_xml.md)
 - Activity
 - [Event](event.md)
 - [Perulangan](perulangan.md)
