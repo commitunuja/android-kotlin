@@ -124,3 +124,26 @@ val cursor = db.query(
 Argumen ketiga dan keempat (`selection` and `selectionArgs`) digabungkan untuk membuat klausa WHERE. Argumen ini diberikan secara terpisah dari kueri pemilihan sehingga akan dikecualikan sebelum digabungkan. Oleh karena itu, pernyataan pemilihan Anda tidak akan terpengaruh oleh penambahan SQL. Untuk mengetahui detail selengkapnya tentang semua argumen, lihat referensi `query()`.
 
 ntuk melihat baris dalam kursor, gunakan salah satu metode pemindahan `Cursor`, yang harus selalu Anda panggil sebelum mulai membaca nilai. Kursor dimulai pada posisi -1 sehingga memanggil `moveToNext()` akan menempatkan "posisi baca" pada entri pertama dalam hasil dan mengembalikan apakah kursor sudah melewati entri terakhir dalam kumpulan hasil atau belum. Untuk setiap baris, Anda dapat membaca nilai kolom dengan memanggil salah satu metode get `Cursor`, seperti `getString()` atau `getLong()`. Untuk setiap metode get, Anda harus meneruskan posisi indeks kolom yang Anda inginkan, yang bisa Anda dapatkan dengan memanggil `getColumnIndex()` atau `getColumnIndexOrThrow()`. Setelah selesai mengiterasi hasilnya, panggil `close()` pada kursor untuk melepaskan resource-nya. Misalnya, berikut adalah cara mendapatkan semua ID item yang disimpan dalam kursor dan menambahkannya ke daftar :
+
+```kotlin
+val itemIds = mutableListOf<Long>()
+with(cursor) {
+    while (moveToNext()) {
+        val itemId = getLong(getColumnIndexOrThrow(BaseColumns._ID))
+        itemIds.add(itemId)
+    }
+}
+```
+
+#### Menghapus informasi dari database
+
+Untuk menghapus baris dari tabel, Anda harus memberikan kriteria pemilihan yang mengidentifikasi baris ke metode `delete()`. Mekanismenya bekerja dalam cara yang sama seperti argumen pemilihan untuk metode `query()`. Proses ini membagi spesifikasi pemilihan menjadi klausa pemilihan dan argumen pemilihan. Klausa menentukan kolom yang harus dilihat, juga memungkinkan Anda untuk menggabungkan proses pengujian kolom. Argumen adalah nilai yang akan digunakan untuk pengujian, yang terikat dengan klausa tersebut. Karena hasilnya tidak ditangani seperti Pernyataan SQL biasa, penambahan SQL pun tidak akan berpengaruh.
+
+```kotlin
+// Define 'where' part of query.
+val selection = "${FeedEntry.COLUMN_NAME_TITLE} LIKE ?"
+// Specify arguments in placeholder order.
+val selectionArgs = arrayOf("MyTitle")
+// Issue SQL statement.
+val deletedRows = db.delete(FeedEntry.TABLE_NAME, selection, selectionArgs)
+```
